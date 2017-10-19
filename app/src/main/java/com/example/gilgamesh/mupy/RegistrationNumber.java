@@ -3,8 +3,9 @@ package com.example.gilgamesh.mupy;
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.preference.PreferenceManager;
+import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -27,7 +28,7 @@ public class RegistrationNumber extends AppCompatActivity {
 
         if (sessionManager.isLoggedIn()) {
                 finish();
-                startActivity(new Intent(RegistrationNumber.this, MainActivity.class));
+                startActivity(new Intent(RegistrationNumber.this, NavActivity.class));
             }
 
             button_submit.setOnClickListener(new View.OnClickListener() {
@@ -36,7 +37,7 @@ public class RegistrationNumber extends AppCompatActivity {
                 EnteredRegNo = editText_regno.getText().toString();
                 if(RegNoCheck(EnteredRegNo)){
                     sessionManager.createSession(EnteredRegNo);
-                    startActivity(new Intent(RegistrationNumber.this, MainActivity.class));
+                    startActivity(new Intent(RegistrationNumber.this, NavActivity.class));
                 }
             }
         });
@@ -75,10 +76,20 @@ public class RegistrationNumber extends AppCompatActivity {
             editor.commit();
         }
 
+        public static String getDefaults(String key, Context context) {
+            SharedPreferences preferences = PreferenceManager.getDefaultSharedPreferences(context);
+            return preferences.getString(key, null);
+        }
+
         public boolean isLoggedIn()
         {
             return preferences.getBoolean(KEY_STATUS, false);
         }
+
+        public String getReg() {
+                      return preferences.getString(REGNO, "DEFAULT");
+        }
+
 
         public void logout()
         {

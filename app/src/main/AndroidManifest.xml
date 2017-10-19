@@ -21,7 +21,13 @@
         </activity>
         <activity android:name=".SpeakerInfoActivity" />
         <activity android:name=".MainActivity" />
-        <activity android:name=".Logout"></activity>
+        <activity android:name=".Logout" />
+        <activity
+            android:name=".NavActivity"
+            android:label="@string/title_activity_nav"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".QRActivity" />
+        <activity android:name=".AboutActivity"></activity>
     </application>
 
 </manifest>

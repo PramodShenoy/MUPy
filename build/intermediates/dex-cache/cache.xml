@@ -102,12 +102,30 @@
     </item>
     <item
         is-multidex="false"
+        jar="/home/gilgamesh/AndroidStudioProjects/MUPy/app/libs/OnBarcode.AndroidBarcode.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.2"
+        sha1="59dd13e54178477c62a29f94057e09f6d536c109">
+        <dex dex="/home/gilgamesh/AndroidStudioProjects/MUPy/app/build/intermediates/pre-dexed/debug/OnBarcode.AndroidBarcode_930ab99ae56009a49539f59eef0a6f8d50977572.jar" />
+    </item>
+    <item
+        is-multidex="false"
         jar="/home/gilgamesh/.android/build-cache/84dc9306a5ff2d7981498d36e5ab94e65988f6ec/output/jars/classes.jar"
         jumboMode="false"
         optimize="true"
         revision="26.0.2"
         sha1="88246166d5afb106f532f6e6deae683c66b42c89">
         <dex dex="/home/gilgamesh/AndroidStudioProjects/MUPy/app/build/intermediates/pre-dexed/debug/classes_9917debd05225bad0c8f57de752374ba08caa793.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/gilgamesh/.gradle/caches/modules-2/files-2.1/com.google.zxing/core/3.2.1/2287494d4f5f9f3a9a2bb6980e3f32053721b315/core-3.2.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.2"
+        sha1="2287494d4f5f9f3a9a2bb6980e3f32053721b315">
+        <dex dex="/home/gilgamesh/AndroidStudioProjects/MUPy/app/build/intermediates/pre-dexed/debug/core-3.2.1_26ddd93bd8d31e060de9c62fc685103a96e26c07.jar" />
     </item>
     <item
         is-multidex="false"

@@ -28,7 +28,8 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
        new SpeakerAsyncTask().execute(query);
-
+        String regno = new RegistrationNumber.SessionManager(this).getReg();
+        Toast.makeText(getApplicationContext(), "Welcome back" + regno, Toast.LENGTH_SHORT).show();
     }
 
     private class SpeakerAsyncTask extends AsyncTask<String, Void, List<Speaker>> {
@@ -55,8 +56,8 @@ public class MainActivity extends AppCompatActivity {
                // recyclerView.addItemDecoration(new DividerItemDecoration(MainActivity.this, LinearLayoutManager.VERTICAL));
                 recyclerView.setItemAnimator(new DefaultItemAnimator());
                 recyclerView.setAdapter(mAdapter);
-
                 recyclerView.addOnItemTouchListener(new RecyclerTouchListener(getApplicationContext(), recyclerView, new RecyclerTouchListener.ClickListener() {
+
                     @Override
                     public void onClick(View view, int position) {
                         Speaker s = speakerList.get(position);
