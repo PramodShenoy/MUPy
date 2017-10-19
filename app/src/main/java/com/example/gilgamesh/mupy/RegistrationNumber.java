@@ -85,5 +85,9 @@ public class RegistrationNumber extends AppCompatActivity {
             editor.clear();
             editor.commit();
         }
+
+        public String getReg() {
+            return preferences.getString(REGNO, "DEFAULT");
+        }
     }
 }

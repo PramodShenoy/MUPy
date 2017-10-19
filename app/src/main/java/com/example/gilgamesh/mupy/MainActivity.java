@@ -29,6 +29,9 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
        new SpeakerAsyncTask().execute(query);
 
+        String regno = new RegistrationNumber.SessionManager(this).getReg();
+        Toast.makeText(getApplicationContext(), "Welcome " + regno, Toast.LENGTH_SHORT).show();
+
     }
 
     private class SpeakerAsyncTask extends AsyncTask<String, Void, List<Speaker>> {
