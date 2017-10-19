@@ -102,6 +102,15 @@
     </item>
     <item
         is-multidex="false"
+        jar="/home/gilgamesh/.android/build-cache/f00ea9f18f55971ab309d9d11c4ad94cf43232ba/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.2"
+        sha1="a8340f8c17337c864648c13abe1416d34c80ec14">
+        <dex dex="/home/gilgamesh/AndroidStudioProjects/MUPy/app/build/intermediates/pre-dexed/debug/classes_a7214953ffd63e78b64ac06b195457a34c735df3.jar" />
+    </item>
+    <item
+        is-multidex="false"
         jar="/home/gilgamesh/AndroidStudioProjects/MUPy/app/libs/OnBarcode.AndroidBarcode.jar"
         jumboMode="false"
         optimize="true"

@@ -80,6 +80,8 @@ public class NavActivity extends AppCompatActivity
         } else if (id == R.id.about) {
 
         } else if (id == R.id.us) {
+            Intent i =new Intent(NavActivity.this,AboutActivity.class);
+            startActivity(i);
 
         }
 
