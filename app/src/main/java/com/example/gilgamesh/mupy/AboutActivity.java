@@ -37,31 +37,31 @@ public class AboutActivity extends AppCompatActivity implements View.OnClickList
         switch (view.getId())
         {
             case R.id.img_1:
-                Toast.makeText(this,"Avikant Saini",Toast.LENGTH_LONG).show();
+                Toast.makeText(this,"Avikant Saini",Toast.LENGTH_SHORT).show();
                 break;
             case R.id.img_3:
-                Toast.makeText(this,"Chinmay Nivsarkar",Toast.LENGTH_LONG).show();
+                Toast.makeText(this,"Chinmay Nivsarkar",Toast.LENGTH_SHORT).show();
                 break;
             case R.id.img_2:
-                Toast.makeText(this,"Yash Kumar Lal",Toast.LENGTH_LONG).show();
+                Toast.makeText(this,"Yash Kumar Lal",Toast.LENGTH_SHORT).show();
                 break;
             case R.id.img_4:
-                Toast.makeText(this,"Sachi Angle",Toast.LENGTH_LONG).show();
+                Toast.makeText(this,"Sachi Angle",Toast.LENGTH_SHORT).show();
                 break;
             case R.id.img_8:
-                Toast.makeText(this,"Abhishek Vora",Toast.LENGTH_LONG).show();
+                Toast.makeText(this,"Abhishek Vora",Toast.LENGTH_SHORT).show();
                 break;
             case R.id.img_5:
-                Toast.makeText(this,"Anam Ahmed",Toast.LENGTH_LONG).show();
+                Toast.makeText(this,"Anam Ahmed",Toast.LENGTH_SHORT).show();
                 break;
             case R.id.img_9:
-                Toast.makeText(this,"Pramod Shenoy",Toast.LENGTH_LONG).show();
+                Toast.makeText(this,"Pramod Shenoy",Toast.LENGTH_SHORT).show();
                 break;
             case R.id.img_7:
-                Toast.makeText(this,"Bhawesh Bhansali",Toast.LENGTH_LONG).show();
+                Toast.makeText(this,"Bhawesh Bhansali",Toast.LENGTH_SHORT).show();
                 break;
             case R.id.img_6:
-                Toast.makeText(this,"Sahal Shams",Toast.LENGTH_LONG).show();
+                Toast.makeText(this,"Sahal Shams",Toast.LENGTH_SHORT).show();
                 break;
         }
     }

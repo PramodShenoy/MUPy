@@ -290,13 +290,10 @@
                         android:gravity="center"
                         android:padding="25dp"
                         android:src="@drawable/anam"
-
-
                         android:textSize="30sp" />
 
                     <TextView
                         android:id="@+id/type22"
-
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="-20dp"

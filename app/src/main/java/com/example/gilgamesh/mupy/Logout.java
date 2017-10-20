@@ -17,7 +17,7 @@ public class Logout extends AppCompatActivity {
         logout.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                new RegistrationNumber.SessionManager(Logout.this).logout();
+                new Utils.SessionManager(Logout.this).logout();
             }
         });
 

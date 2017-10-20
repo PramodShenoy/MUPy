@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/black"
     tools:context="com.example.gilgamesh.mupy.RegistrationNumber">
 
     <EditText
@@ -13,7 +14,10 @@
         android:ems="10"
         android:hint="Registration Number"
         android:inputType="number"
+        android:textColorHint="#FFF9C4"
+        android:textColor="#FFF9C4"
         android:layout_marginBottom="62dp"
+        android:backgroundTint="#FFF9C4"
         android:layout_above="@+id/submit"
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true"
@@ -25,6 +29,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Submit"
+        android:background="@android:color/transparent"
+        android:textColor="#FFF9C4"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="209dp" />
