@@ -9,7 +9,6 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.widget.ImageView;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import java.io.InputStream;
 
@@ -23,7 +22,7 @@ public class SpeakerInfoActivity extends AppCompatActivity {
         setContentView(R.layout.activity_speaker_info);
         Intent i = getIntent();
         Speaker s = (Speaker) i.getSerializableExtra("speaker");
-        Toast.makeText(this,s.getSpeaker(),Toast.LENGTH_LONG).show();
+        //Toast.makeText(this,s.getSpeaker(),Toast.LENGTH_LONG).show();
         TextView speaker_name,topics,speaker_info;
         speaker_name = (TextView) findViewById(R.id.speaker_name);
         topics = (TextView) findViewById(R.id.topics_list);

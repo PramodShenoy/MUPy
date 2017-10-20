@@ -93,7 +93,7 @@ public class MainActivity extends AppCompatActivity {
 
             }
             else
-                Toast.makeText(MainActivity.this,"CANNOT CONNECT",Toast.LENGTH_LONG).show();
+                Toast.makeText(MainActivity.this,"Could not CONNECT",Toast.LENGTH_LONG).show();
         }
     }
 
