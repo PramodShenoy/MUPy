@@ -1,15 +1,26 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/black"
     tools:context="com.example.gilgamesh.mupy.QRActivity">
 
     <ImageView
-        app:layout_constraintEnd_toEndOf="parent"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/qr_img"/>
 
-</android.support.constraint.ConstraintLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/qr_hint"
+        android:padding="20dp"
+        android:gravity="center"
+        android:layout_below="@+id/qr_img"
+        android:textColor="#ffffff"
+        android:text="Show this QR Code to your nearest Organizer"
+/>
+
+</RelativeLayout>

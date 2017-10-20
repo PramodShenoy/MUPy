@@ -29,7 +29,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
        new SpeakerAsyncTask().execute(query);
         String regno = new RegistrationNumber.SessionManager(this).getReg();
-        Toast.makeText(getApplicationContext(), "Welcome back" + regno, Toast.LENGTH_SHORT).show();
+        Toast.makeText(getApplicationContext(), "Welcome back " + regno, Toast.LENGTH_SHORT).show();
     }
 
     private class SpeakerAsyncTask extends AsyncTask<String, Void, List<Speaker>> {
@@ -75,7 +75,7 @@ public class MainActivity extends AppCompatActivity {
 
             }
             else
-                Toast.makeText(MainActivity.this,"CANNOT CONNECT",Toast.LENGTH_LONG).show();
+                Toast.makeText(MainActivity.this,"Could not CONNECT",Toast.LENGTH_LONG).show();
         }
     }
 
