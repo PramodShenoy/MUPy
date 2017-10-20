@@ -8,6 +8,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
+import android.widget.Toast;
 
 import com.google.zxing.BarcodeFormat;
 import com.google.zxing.MultiFormatWriter;
@@ -76,12 +77,14 @@ public class QRActivity extends AppCompatActivity {
         Bitmap bitmap = Bitmap.createBitmap(bitMatrixWidth, bitMatrixHeight, Bitmap.Config.ARGB_4444);
 
         bitmap.setPixels(pixels, 0, 1000, 0, 0, bitMatrixWidth, bitMatrixHeight);
-        
+
        try {
            String path = Environment.getExternalStorageDirectory().toString();
            OutputStream fOut = null;
            Integer counter = 0;
-           File file = new File(path, "QR" + counter + ".jpg"); // the File to save , append increasing numeric counter to prevent files from getting overwritten.
+           File file = new File(path, "QR" + counter + ".jpg");
+           Toast.makeText(this,path,Toast.LENGTH_SHORT).show();
+                   // the File to save , append increasing numeric counter to prevent files from getting overwritten.
            fOut = new FileOutputStream(file);
 
 
