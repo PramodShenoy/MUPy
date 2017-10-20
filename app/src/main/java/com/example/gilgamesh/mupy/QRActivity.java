@@ -2,6 +2,8 @@ package com.example.gilgamesh.mupy;
 
 import android.graphics.Bitmap;
 import android.os.Bundle;
+import android.os.Environment;
+import android.provider.MediaStore;
 import android.support.v7.app.AppCompatActivity;
 import android.widget.Button;
 import android.widget.EditText;
@@ -12,8 +14,9 @@ import com.google.zxing.MultiFormatWriter;
 import com.google.zxing.WriterException;
 import com.google.zxing.common.BitMatrix;
 
+import java.io.File;
 import java.io.FileOutputStream;
-import java.io.IOException;
+import java.io.OutputStream;
 
 public class QRActivity extends AppCompatActivity {
 
@@ -73,24 +76,24 @@ public class QRActivity extends AppCompatActivity {
         Bitmap bitmap = Bitmap.createBitmap(bitMatrixWidth, bitMatrixHeight, Bitmap.Config.ARGB_4444);
 
         bitmap.setPixels(pixels, 0, 1000, 0, 0, bitMatrixWidth, bitMatrixHeight);
+        
+       try {
+           String path = Environment.getExternalStorageDirectory().toString();
+           OutputStream fOut = null;
+           Integer counter = 0;
+           File file = new File(path, "QR" + counter + ".jpg"); // the File to save , append increasing numeric counter to prevent files from getting overwritten.
+           fOut = new FileOutputStream(file);
 
 
-        FileOutputStream out = null;
-        try {
-            out = new FileOutputStream("sarthak.jpg");
-            bitmap.compress(Bitmap.CompressFormat.PNG, 100, out); // bmp is your Bitmap instance
-            // PNG is a lossless format, the compression factor (100) is ignored
-        } catch (Exception e) {
-            e.printStackTrace();
-        } finally {
-            try {
-                if (out != null) {
-                    out.close();
-                }
-            } catch (IOException e) {
-                e.printStackTrace();
-            }
-        }
+           bitmap.compress(Bitmap.CompressFormat.JPEG, 85, fOut); // saving the Bitmap to a file compressed as a JPEG with 85% compression rate
+           fOut.flush(); // Not really required
+           fOut.close(); // do not forget to close the stream
+
+           MediaStore.Images.Media.insertImage(getContentResolver(), file.getAbsolutePath(), file.getName(), file.getName());
+       }catch (Exception e)
+       {
+           e.printStackTrace();
+       }
 
 
         return bitmap;
