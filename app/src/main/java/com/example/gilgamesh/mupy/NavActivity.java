@@ -3,6 +3,7 @@ package com.example.gilgamesh.mupy;
 import android.Manifest;
 import android.content.Intent;
 import android.content.pm.PackageManager;
+import android.net.Uri;
 import android.os.Bundle;
 import android.support.design.widget.NavigationView;
 import android.support.v4.app.ActivityCompat;
@@ -111,8 +112,16 @@ public class NavActivity extends AppCompatActivity
             startActivity(i);
 
         } else if (id == R.id.tees) {
+            String url = "https://www.pypals.org";
+            Intent i = new Intent(Intent.ACTION_VIEW);
+            i.setData(Uri.parse(url));
+            startActivity(i);
 
         } else if (id == R.id.about) {
+            String url = "https://www.pypals.org";
+            Intent i = new Intent(Intent.ACTION_VIEW);
+            i.setData(Uri.parse(url));
+            startActivity(i);
 
         } else if (id == R.id.us) {
             Intent i =new Intent(NavActivity.this,AboutActivity.class);

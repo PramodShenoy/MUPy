@@ -4,32 +4,41 @@
 
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
-    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"></uses-permission>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
 
     <application
         android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@drawable/icon"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".RegistrationNumber">
+        <activity android:name=".SplashActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".SpeakerInfoActivity" />
-        <activity android:name=".MainActivity" />
-        <activity android:name=".Logout" />
+        <activity android:name=".SpeakerInfoActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".MainActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".Logout"
+            android:screenOrientation="portrait"/>
         <activity
             android:name=".NavActivity"
             android:label="@string/app_name"
+            android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name=".QRActivity" />
-        <activity android:name=".AboutActivity"></activity>
+        <activity android:name=".QRActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".AboutActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".RegistrationNumber"
+            android:screenOrientation="portrait">
+        </activity>
     </application>
 
 </manifest>

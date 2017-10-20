@@ -5,20 +5,19 @@
 
         <item
             android:id="@+id/speakers_show"
-            android:icon="@drawable/ic_menu_camera"
+            android:icon="@drawable/speaker"
             android:title="Speakers" />
 
         <item
             android:id="@+id/barcode"
-            android:icon="@drawable/ic_menu_camera"
+            android:icon="@drawable/qr"
             android:title="Barcode" />
 
         <item
             android:id="@+id/tees"
-            android:icon="@drawable/ic_menu_gallery"
+            android:icon="@drawable/sp"
             android:title="T-shirts" />
     </group>
-    <group android:title="Contact Us">
         <item
             android:id="@+id/about"
             android:icon="@drawable/ic_menu_manage"
@@ -27,8 +26,7 @@
 
         <item
             android:id="@+id/us"
-            android:icon="@drawable/ic_menu_manage"
-            android:title="About Us">
+            android:icon="@drawable/gear"
+            android:title="About The Team">
         </item>
-    </group>
 </menu>

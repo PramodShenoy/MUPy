@@ -2,15 +2,6 @@
 <items version="2" >
 
     <item
-        is-multidex="true"
-        jar="/home/gilgamesh/AndroidStudioProjects/MUPy/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="26.0.2"
-        sha1="3be78ebc2706b2e1fe2f12d5726887a92d6c183b">
-        <dex dex="/home/gilgamesh/AndroidStudioProjects/MUPy/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run_1ece6cb92dcd2c55b305261a0c6544115f425bc2/classes.dex" />
-    </item>
-    <item
         is-multidex="false"
         jar="/home/gilgamesh/AndroidStudioProjects/MUPy/app/libs/OnBarcode.AndroidBarcode.jar"
         jumboMode="false"
@@ -21,11 +12,20 @@
     </item>
     <item
         is-multidex="true"
+        jar="/home/gilgamesh/AndroidStudioProjects/MUPy/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.2"
+        sha1="3be78ebc2706b2e1fe2f12d5726887a92d6c183b">
+        <dex dex="/home/gilgamesh/AndroidStudioProjects/MUPy/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run_1ece6cb92dcd2c55b305261a0c6544115f425bc2/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
         jar="/home/gilgamesh/AndroidStudioProjects/MUPy/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
         jumboMode="true"
         optimize="true"
         revision="26.0.2"
-        sha1="b0a3a27766e14cd1151df11a434696980f3302ed">
+        sha1="542aaf0aadcb876734da9407e78225409b303f2f">
         <dex dex="/home/gilgamesh/AndroidStudioProjects/MUPy/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_bf3761f0509b97d035f8265b7c3d65469ff2d367/classes.dex" />
     </item>
     <item
