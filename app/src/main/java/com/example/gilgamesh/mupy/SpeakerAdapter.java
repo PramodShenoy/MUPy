@@ -1,6 +1,7 @@
 package com.example.gilgamesh.mupy;
 
 import android.support.v7.widget.RecyclerView;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -27,27 +28,7 @@ public class SpeakerAdapter extends RecyclerView.Adapter<SpeakerAdapter.MyViewHo
             ll = (LinearLayout) view.findViewById(R.id.linear_main);
         }
 
-        /*
-        public  View getView(int position, View convertView, ViewGroup parent) {
-            View row = convertView;
 
-            if (row == null) {
-                row = LayoutInflater.from(parent.getContext()).inflate(R.layout.row_item, null);
-            }
-
-            TextView tv = (TextView) row.findViewById(R.id.track);
-            String tr = (String)tv.getText();
-
-            ll=(LinearLayout) row.findViewById(R.id.linear_main);
-            if(tr.equalsIgnoreCase("track one"))
-                ll.setBackground(Drawable.createFromPath("/home/gilgamesh/AndroidStudioProjects/MUPy/app/src/main/res/drawable/shape_purple.xml"));
-            else
-                ll.setBackground(Drawable.createFromPath("/home/gilgamesh/AndroidStudioProjects/MUPy/app/src/main/res/drawable/shape.xml"));
-
-
-
-            return ll;
-        }*/
     }
 
 
@@ -59,6 +40,28 @@ public class SpeakerAdapter extends RecyclerView.Adapter<SpeakerAdapter.MyViewHo
     public MyViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
         View itemView = LayoutInflater.from(parent.getContext())
                .inflate(R.layout.row_item, parent, false);
+        LinearLayout ll1 = (LinearLayout)itemView.findViewById(R.id.linear_main);
+        //Speaker movie = speakerList.get(position);
+        //final RecyclerView.ViewHolder holder = new RecyclerView.ViewHolder(itemView);
+        //holder.getAdapterPosition();
+        Speaker movie = speakerList.get(viewType);
+
+        if(movie.getType().equalsIgnoreCase("Track One"))
+        {
+            //ll.setBackground(R.drawable.shape);
+            ll1.setBackgroundResource(R.drawable.shape_purple);//GREEN
+            //holder.venue.setText("1");
+            //.getResources().getDrawable(R.drawable.img
+            Log.d("TRACK ONE","_____________"+movie.getSpeaker()+"____________________");
+
+
+        }
+        else {
+            ll1.setBackgroundResource(R.drawable.shape);
+            //holder.venue.setText("2");
+            Log.d("TRACK TWO","_____________"+movie.getSpeaker()+"____________________");
+        }
+
 
         return new MyViewHolder(itemView);
     }
@@ -73,7 +76,29 @@ public class SpeakerAdapter extends RecyclerView.Adapter<SpeakerAdapter.MyViewHo
         holder.time.setText(movie.getTime());
         holder.venue.setText(movie.getVenue());
         holder.track.setText((movie.getType()));
+        /*if(movie.getType().equalsIgnoreCase("Track One"))
+        {
+            //ll.setBackground(R.drawable.shape);
+            ll.setBackgroundResource(R.drawable.shape_purple);//GREEN
+            holder.venue.setText("1");
+            //.getResources().getDrawable(R.drawable.img
+            Log.d("TRACK ONE","_____________"+movie.getSpeaker()+"____________________");
 
+
+        }
+        else {
+            ll.setBackgroundResource(R.drawable.shape);
+            holder.venue.setText("2");
+            Log.d("TRACK TWO","_____________"+movie.getSpeaker()+"____________________");
+        }*/
+
+
+    }
+
+    @Override
+    public int getItemViewType(int position) {
+        //your code
+        return position;
     }
 
     @Override

@@ -2,112 +2,13 @@
 <items version="2" >
 
     <item
-        is-multidex="false"
-        jar="/home/gilgamesh/.android/build-cache/4b33c1f83b3aa906eeb36325f5047e3a9211df74/output/jars/classes.jar"
-        jumboMode="false"
+        is-multidex="true"
+        jar="/home/gilgamesh/AndroidStudioProjects/MUPy/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
+        jumboMode="true"
         optimize="true"
         revision="26.0.2"
-        sha1="18d31838aa4fcc768a8a0516e22cc13b94655d89">
-        <dex dex="/home/gilgamesh/AndroidStudioProjects/MUPy/app/build/intermediates/pre-dexed/debug/classes_d0b40876bc55e2f9d3d25b935b0d2d05741b9320.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/home/gilgamesh/.android/build-cache/bc3219dfe1510bf258a10273e1d63295a3d74806/output/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="26.0.2"
-        sha1="ac6948cce36f694f3eb3d73a135e298dc4b3527a">
-        <dex dex="/home/gilgamesh/AndroidStudioProjects/MUPy/app/build/intermediates/pre-dexed/debug/classes_861431e19bcf9acf861e5010d26b29fdf6d507ee.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/home/gilgamesh/Android/Sdk/extras/m2repository/com/android/support/constraint/constraint-layout-solver/1.0.2/constraint-layout-solver-1.0.2.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="26.0.2"
-        sha1="b9cd8fc6bd15cb915735d34535db30ece0c44603">
-        <dex dex="/home/gilgamesh/AndroidStudioProjects/MUPy/app/build/intermediates/pre-dexed/debug/constraint-layout-solver-1.0.2_78b01398ff40fbf56dc4922b52c9b1f3ffa7bbe8.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/home/gilgamesh/.android/build-cache/cf5ff2408cd08801ebc3d047dbac5246913cbb24/output/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="26.0.2"
-        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
-        <dex dex="/home/gilgamesh/AndroidStudioProjects/MUPy/app/build/intermediates/pre-dexed/debug/classes_bfc7dfd5f1f45bc5c6b475138a5526a64f7943fd.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/home/gilgamesh/.android/build-cache/84c63f0066536a6137c26bc1fb7dba4e40c70f0c/output/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="26.0.2"
-        sha1="cddcd0fb93bc70e27325f2f715b2710332004ebb">
-        <dex dex="/home/gilgamesh/AndroidStudioProjects/MUPy/app/build/intermediates/pre-dexed/debug/classes_ca4be9ae56c64487d7febeccfcf2f83934c8bae3.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/home/gilgamesh/.android/build-cache/02ac72418b8bff525046573ecd058c6dc665646c/output/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="26.0.2"
-        sha1="44ee06abb66da30f5855e6bf54574e64cdcd982a">
-        <dex dex="/home/gilgamesh/AndroidStudioProjects/MUPy/app/build/intermediates/pre-dexed/debug/classes_c8439c27b1f5aea66478afe22aca93f2f47f7859.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/home/gilgamesh/.android/build-cache/d372185e98c27a42ef376cd10cdc67902f7fc36c/output/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="26.0.2"
-        sha1="8df0e365e40beb151bc42dee20817721a6cab7b0">
-        <dex dex="/home/gilgamesh/AndroidStudioProjects/MUPy/app/build/intermediates/pre-dexed/debug/classes_95f9775be1d13d6b2720cf5a8b1e2fbe8918fe4e.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/home/gilgamesh/.android/build-cache/581d88190370607b8a66d014c75477d9826bc7dd/output/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="26.0.2"
-        sha1="c4f45092eee6cdf1a5dbd597b2b6819be652ce2e">
-        <dex dex="/home/gilgamesh/AndroidStudioProjects/MUPy/app/build/intermediates/pre-dexed/debug/classes_b6dc872a7cb66a8e633b14abab4e6cc6dfc558be.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/home/gilgamesh/Android/Sdk/extras/android/m2repository/com/android/support/support-annotations/26.0.0-alpha1/support-annotations-26.0.0-alpha1.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="26.0.2"
-        sha1="023ee503b631f69511e335a061ea008f8da60f40">
-        <dex dex="/home/gilgamesh/AndroidStudioProjects/MUPy/app/build/intermediates/pre-dexed/debug/support-annotations-26.0.0-alpha1_0b0879bfccc5731698e69680c8f3b1aed0970905.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/home/gilgamesh/.android/build-cache/20c9d3e326f5d93d1399ec362c95bf5e09103908/output/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="26.0.2"
-        sha1="952944218ecedea1554a513dec0c14d570642843">
-        <dex dex="/home/gilgamesh/AndroidStudioProjects/MUPy/app/build/intermediates/pre-dexed/debug/classes_b5cd01b1d5b485016f6bd3869775e07e58ccc8fa.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/home/gilgamesh/.android/build-cache/872a0f45c5d2b044ad7f1fc48ddbbaef1c09feed/output/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="26.0.2"
-        sha1="fcd01fd11233459f546c437ec927e9b61bf7caf1">
-        <dex dex="/home/gilgamesh/AndroidStudioProjects/MUPy/app/build/intermediates/pre-dexed/debug/classes_53f269e2a958515d12be7d3d575244b0708ffc6e.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/home/gilgamesh/.android/build-cache/f00ea9f18f55971ab309d9d11c4ad94cf43232ba/output/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="26.0.2"
-        sha1="a8340f8c17337c864648c13abe1416d34c80ec14">
-        <dex dex="/home/gilgamesh/AndroidStudioProjects/MUPy/app/build/intermediates/pre-dexed/debug/classes_a7214953ffd63e78b64ac06b195457a34c735df3.jar" />
+        sha1="3be78ebc2706b2e1fe2f12d5726887a92d6c183b">
+        <dex dex="/home/gilgamesh/AndroidStudioProjects/MUPy/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run_1ece6cb92dcd2c55b305261a0c6544115f425bc2/classes.dex" />
     </item>
     <item
         is-multidex="false"
@@ -119,58 +20,22 @@
         <dex dex="/home/gilgamesh/AndroidStudioProjects/MUPy/app/build/intermediates/pre-dexed/debug/OnBarcode.AndroidBarcode_930ab99ae56009a49539f59eef0a6f8d50977572.jar" />
     </item>
     <item
-        is-multidex="false"
-        jar="/home/gilgamesh/.android/build-cache/84dc9306a5ff2d7981498d36e5ab94e65988f6ec/output/jars/classes.jar"
-        jumboMode="false"
+        is-multidex="true"
+        jar="/home/gilgamesh/AndroidStudioProjects/MUPy/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
+        jumboMode="true"
         optimize="true"
         revision="26.0.2"
-        sha1="88246166d5afb106f532f6e6deae683c66b42c89">
-        <dex dex="/home/gilgamesh/AndroidStudioProjects/MUPy/app/build/intermediates/pre-dexed/debug/classes_9917debd05225bad0c8f57de752374ba08caa793.jar" />
+        sha1="b0a3a27766e14cd1151df11a434696980f3302ed">
+        <dex dex="/home/gilgamesh/AndroidStudioProjects/MUPy/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_bf3761f0509b97d035f8265b7c3d65469ff2d367/classes.dex" />
     </item>
     <item
-        is-multidex="false"
-        jar="/home/gilgamesh/.gradle/caches/modules-2/files-2.1/com.google.zxing/core/3.2.1/2287494d4f5f9f3a9a2bb6980e3f32053721b315/core-3.2.1.jar"
-        jumboMode="false"
+        is-multidex="true"
+        jar="/home/gilgamesh/AndroidStudioProjects/MUPy/app/libs/OnBarcode.AndroidBarcode.jar"
+        jumboMode="true"
         optimize="true"
         revision="26.0.2"
-        sha1="2287494d4f5f9f3a9a2bb6980e3f32053721b315">
-        <dex dex="/home/gilgamesh/AndroidStudioProjects/MUPy/app/build/intermediates/pre-dexed/debug/core-3.2.1_26ddd93bd8d31e060de9c62fc685103a96e26c07.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/home/gilgamesh/.android/build-cache/2418eb7f3aeee4e20538e5c60ff65faa84de9319/output/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="26.0.2"
-        sha1="9935891f23923f39d002087085d9696568a9f657">
-        <dex dex="/home/gilgamesh/AndroidStudioProjects/MUPy/app/build/intermediates/pre-dexed/debug/classes_ec5264d2f24f59b278755619684ddc56d4ad804f.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/home/gilgamesh/.android/build-cache/b819cf7471e0a944db36eec497aee4028d9e95f9/output/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="26.0.2"
-        sha1="47471eb19df288158b00b8d9cfa41bce7373f5cc">
-        <dex dex="/home/gilgamesh/AndroidStudioProjects/MUPy/app/build/intermediates/pre-dexed/debug/classes_1132c0abf8e910b682285003dfcfbf48100c1f50.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/home/gilgamesh/.android/build-cache/15bddffd333eed7632098a9372a151477682d156/output/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="26.0.2"
-        sha1="2e92aa0163544a804a0b34f169ca61801770839a">
-        <dex dex="/home/gilgamesh/AndroidStudioProjects/MUPy/app/build/intermediates/pre-dexed/debug/classes_a2948827b26d954e8a4aa4f122f6ea909629eb88.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/home/gilgamesh/.android/build-cache/c2af12b64fdd6cb0e27b6cea9f8e17c226657e6c/output/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="26.0.2"
-        sha1="6a022bf00ccd0948a8180c505e8e458bbddd43a6">
-        <dex dex="/home/gilgamesh/AndroidStudioProjects/MUPy/app/build/intermediates/pre-dexed/debug/classes_ebcda05a38db606efac9f016820ad93bd607a2c4.jar" />
+        sha1="59dd13e54178477c62a29f94057e09f6d536c109">
+        <dex dex="/home/gilgamesh/AndroidStudioProjects/MUPy/app/build/intermediates/transforms/dex/debug/folders/1000/2/OnBarcode.AndroidBarcode_930ab99ae56009a49539f59eef0a6f8d50977572/classes.dex" />
     </item>
 
 </items>

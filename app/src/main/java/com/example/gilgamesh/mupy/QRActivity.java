@@ -12,11 +12,15 @@ import com.google.zxing.MultiFormatWriter;
 import com.google.zxing.WriterException;
 import com.google.zxing.common.BitMatrix;
 
+import java.io.FileOutputStream;
+import java.io.IOException;
+
 public class QRActivity extends AppCompatActivity {
 
     ImageView imageView;
     Button button;
     EditText editText;
+    String TAG="sfsdf";
     String EditTextValue ;
     Thread thread ;
     public final static int QRcodeWidth = 1000 ;
@@ -69,6 +73,27 @@ public class QRActivity extends AppCompatActivity {
         Bitmap bitmap = Bitmap.createBitmap(bitMatrixWidth, bitMatrixHeight, Bitmap.Config.ARGB_4444);
 
         bitmap.setPixels(pixels, 0, 1000, 0, 0, bitMatrixWidth, bitMatrixHeight);
+
+
+        FileOutputStream out = null;
+        try {
+            out = new FileOutputStream("sarthak.jpg");
+            bitmap.compress(Bitmap.CompressFormat.PNG, 100, out); // bmp is your Bitmap instance
+            // PNG is a lossless format, the compression factor (100) is ignored
+        } catch (Exception e) {
+            e.printStackTrace();
+        } finally {
+            try {
+                if (out != null) {
+                    out.close();
+                }
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+        }
+
+
         return bitmap;
     }
+
 }
